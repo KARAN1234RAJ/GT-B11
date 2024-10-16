@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <div>
+      <table border="2px">
+        <caption>
+          Employee Data
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th colspan="2">Mobile number</th>
+            <!-- <th>Mobile-2</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Karan</td>
+            <td>28</td>
+            <td rowspan="2">M</td>
+            <td>karan@example.com</td>
+            <td>9876543210</td>
+            <td>2436852347</td>
+          </tr>
+          <tr>
+            <td>Rohit</td>
+            <td>21</td>
+            <!-- <td>M</td> -->
+            <td>rohit@example.com</td>
+            <td>9876543210</td>
+            <td>9765979977</td>
+          </tr>
+          
+        </tbody>
+        <tfoot>
+          <tr></tr>
+            <td colspan="6">Total Employees: 2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
