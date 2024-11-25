@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      /* Default styling */
+      body {
+        background-color: lightblue;
+        font-size: 16px;
+      }
+
+      /* When the screen width is 768px or smaller */
+      @media (max-width: 768px) {
+        body {
+          background-color: lightcoral;
+          font-size: 14px;
+        }
+      }
+
+      /* When the screen width is 480px or smaller */
+      @media (max-width: 480px) {
+        body {
+          background-color: lightgreen;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Background and Font Size</h1>
+    <p>
+      Resize the browser window to see changes in background color and font
+      size.
+    </p>
+  </body>
+</html>

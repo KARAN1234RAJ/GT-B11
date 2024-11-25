@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Change on Screen Width</title>
+    <style>
+      /* Default layout with sidebar on the left */
+      .container {
+        display: flex;
+      }
+
+      .sidebar {
+        width: 200px;
+        background-color: lightgray;
+        padding: 10px;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 10px;
+        background-color: whitesmoke;
+      }
+
+      /* Change layout to stacked on smaller screens */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .sidebar,
+        .main-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="main-content">
+        <h1>Main Content</h1>
+        <p>
+          Resize the browser to see the layout change from a side-by-side to a
+          stacked layout.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

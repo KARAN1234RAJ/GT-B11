@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide Sidebar</title>
+    <style>
+      .sidebar {
+        width: 200px;
+        background-color: lightcoral;
+        padding: 10px;
+      }
+
+      /* Hide sidebar on screens smaller than 600px */
+      @media (max-width: 600px) {
+        .sidebar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">Sidebar Content</div>
+    <main>
+      <h1>Main Content</h1>
+      <p>
+        This is the main content area. The sidebar will disappear on screens
+        smaller than 600px.
+      </p>
+    </main>
+  </body>
+</html>

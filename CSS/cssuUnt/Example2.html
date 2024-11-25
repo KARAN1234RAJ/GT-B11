@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html{
+          font-size: 5px;
+      }
+      #parent {
+        border: 1px solid black;
+        width:50%;
+        height: 200px;
+        background-color: lightblue;
+        font-size: 100px;
+      }
+     .parentPara {
+        font-size: 20%;
+        margin: 10px;
+      }
+     #child {
+        border: 1rem solid red;
+        width: 50%;
+        height: 100px;
+        background-color: lightgreen;
+        margin: 10px;
+        font-size: 80px;
+      }
+     .childPara {
+        font-size: 15%;
+        margin: 10px;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p class="parentPara">Hello, I am a parent element.</p>
+      <div id="child">
+        <p class="childPara">Hello, I am a child element.</p>
+      </div>
+    </div>
+  </body>
+</html>

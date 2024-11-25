@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        border-radius: 50%;
+        animation-name: rotate;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+      }
+      img:hover {
+        animation-play-state: paused;
+      }
+      @keyframes rotate {
+        from {
+          transform:  translateX(0px);
+        }
+        to {
+          transform: translateX(1000px);
+          
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://cdn.mos.cms.futurecdn.net/snbrHBRigvvzjxNGuUtcck.jpg" />
+    <h2>Hover to pause</h2>
+  </body>
+</html>

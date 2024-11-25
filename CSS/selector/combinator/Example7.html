@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More CSS Combinator Examples</title>
+    <style>
+      /* Descendant Combinator */
+      nav ul li a {
+        color: darkblue;
+      }
+
+      /* Child Combinator */
+      header > h1 {
+        font-size: 2em;
+        color: crimson;
+      }
+
+      /* Adjacent Sibling Combinator */
+      .content + .sidebar {
+        background-color: lightblue;
+      }
+
+      /* General Sibling Combinator */
+      .header ~ .footer {
+        background-color: lightgray;
+        padding: 10px;
+      }
+
+      /* Descendant with Class Selector */
+      article.content p {
+        color: darkgreen;
+        font-style: italic;
+      }
+
+      /* Child with Class Selector */
+      div.wrapper > div.box {
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      /* Adjacent Sibling with ID Selector */
+      #main + #related {
+        color: darkred;
+      }
+
+      /* General Sibling with Class and Pseudo-Class */
+      .menu ~ .item:hover {
+        background-color: yellow;
+      }
+
+      /* Multiple Group Selector */
+      h2,
+      div,
+      span {
+        margin: 10px 0;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Main Header</h1>
+      <p>Some introductory text.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <div class="box">This is a box inside a wrapper.</div>
+    </div>
+
+    <article class="content">
+      <h2>Article Title</h2>
+      <p>Paragraph inside article (content).</p>
+      <p>Another paragraph inside article.</p>
+    </article>
+
+    <div class="sidebar">Sidebar content next to article.</div>
+
+    <div id="main">Main content area.</div>
+    <div id="related">Related content next to main.</div>
+
+    <div class="menu">Menu section</div>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+
+    <div class="footer">
+      <p>Footer content.</p>
+    </div>
+  </body>
+</html>

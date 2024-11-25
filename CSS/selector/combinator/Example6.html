@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators - Testing Examples</title>
+    <style>
+        section ul li {
+            color: blue;
+        }
+
+        article > h2 {
+            color: green;
+        }
+
+        h2 + p {
+            color: red;
+        }
+
+        h2 ~ p {
+            color: purple;
+        }
+
+        h3, ul {
+            font-weight: bold;
+        }
+
+        div.container p {
+            background-color: lightgray;
+        }
+
+        div#test > p {
+            background-color: lightgreen;
+        }
+
+        div.container + p {
+            color: darkblue;
+        }
+
+        [data-test] ~ p {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Heading 2</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+    <section>
+        <h3>Section with List</h3>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+        </ul>
+    </section>
+
+    <article>
+        <h2>Article Heading</h2>
+        <p>Paragraph inside article</p>
+    </article>
+
+    <div class="container">
+        <h3>Div with class "container"</h3>
+        <p>Paragraph inside div.container</p>
+    </div>
+
+    <p>Paragraph after div.container</p>
+
+    <div id="test">
+        <h3>Div with ID "test"</h3>
+        <p>Paragraph inside div#test</p>
+    </div>
+
+    <div data-test="value">
+        <h3>Div with data attribute</h3>
+    </div>
+    <p>Paragraph after div[data-test]</p>
+
+</body>
+</html>

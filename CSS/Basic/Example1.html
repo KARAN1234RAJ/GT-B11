@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <style>
+      /* Apply background color to all elements */
+      * {
+        background-color: rgb(160, 229, 233);
+      }
+
+      /* Apply background color to all <p> elements */
+      p {
+        background-color: red;
+      }
+
+      /* Apply background color to all <span> elements inside <p> elements */
+      p span {
+        background-color: yellow;
+      }
+
+      /* Apply background color to all <h3> elements inside <div> elements */
+      div h3 {
+        background-color: rgb(194, 48, 231);
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <h1 style="color: Red">This is a header!</h1>
+      <div>
+        <p>
+          <span> div parent to p parent to span </span>
+        </p>
+        <span>
+          <h3>div parent to span parent to h3</h3>
+        </span>
+      </div>
+    </center>
+  </body>
+</html>

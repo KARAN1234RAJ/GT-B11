@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image</title>
+    <style>
+      .responsive-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* Smaller screens */
+      @media (max-width: 600px) {
+        .responsive-image {
+          width: 80%;
+          border-radius: 5px;
+        }
+      }
+
+      /* Very small screens */
+      @media (max-width: 400px) {
+        .responsive-image {
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Image</h1>
+    <img
+      src="https://www.tatatrusts.org/Upload/Images/masthead/ratan-tata-img.jpg"
+      alt="Sample Image"
+      class="responsive-image"
+    />
+  </body>
+</html>

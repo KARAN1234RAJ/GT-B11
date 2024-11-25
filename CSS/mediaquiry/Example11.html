@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Font</title>
+    <style>
+      /* Default styling */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      /* Larger screens get a larger font size */
+      @media (min-width: 1024px) {
+        body {
+          font-size: 20px;
+          font-family: "Georgia", serif;
+        }
+      }
+
+      /* Smaller screens get a smaller font size */
+      @media (max-width: 600px) {
+        body {
+          font-size: 16px;
+          font-family: "Verdana", sans-serif;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Font Styles</h1>
+    <p>
+      This paragraph will change font size and font family based on screen
+      width. Resize the window to see the effect.
+    </p>
+  </body>
+</html>
