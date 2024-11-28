@@ -1,14 +1,14 @@
 // literal Way
 var arr = [1, 2, 3, "Hello"];
-console.log(arr); //1,2,3,Hello
+console.log(arr); 
 // Constructor way
 // let newArray = new Array(1,"Grow","Tech")
 // console.log(newArray);
 arr.push(20);
-console.log(arr); //1,2,3, Hello, 20
+console.log(arr); 
 arr.pop();
 
-console.log(arr); //1,2,3, Hello
+console.log(arr); 
 console.log(arr[3]);
 arr[3] = "Hello And Welcome";
 console.log(arr.length);

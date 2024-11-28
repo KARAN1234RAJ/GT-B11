@@ -3,4 +3,4 @@ console.log(marks);
 
 let newMarks= marks.slice(2,5);
 
-console.log(Array.isArray(newMarks));
+console.log((newMarks));

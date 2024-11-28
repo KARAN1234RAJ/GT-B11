@@ -13,22 +13,22 @@
 
 //================================
 
-// array = [11, 12, 13, 14, 15];
+array = [11, 12, 13, 14, 15];
 
-// array.forEach(function (val) {
-//   console.log(val);
-// });
+array.forEach(function (val) {
+  console.log(val);
+});
 
 //============================
 
-// const directions = ['North', 'South', 'East', 'West'];
-// function demo (val, idx, array) {
-//   console.log(val);
-//   if (idx === array.length - 1) {
-//     console.log ('End of directions');
-//   }
-// }
-// directions.forEach(demo);
+const directions = ['North', 'South', 'East', 'West'];
+function demo (val, idx, array) {
+  console.log(val);
+  if (idx === array.length - 1) {
+    console.log ('End of directions');
+  }
+}
+directions     
 
 //=============================
 
@@ -50,12 +50,12 @@
 
 //=======================
 
-array = [11, 12, 13, 14, 15, 16];
+// array = [11, 12, 13, 14, 15, 16];
 
-even_num = (x) => x % 2 !== 0;
-even_arr = array.filter(even_num);
-deleteElement = (x) => x !== 16;
-restArray = array.filter(deleteElement);
-console.log(array);
-console.log(even_arr);
-console.log(restArray);
+// even_num = (x) => x % 2 !== 0;
+// even_arr = array.filter(even_num);
+// deleteElement = (x) => x !== 16;
+// restArray = array.filter(deleteElement);
+// console.log(array);
+// console.log(even_arr);
+// console.log(restArray);
