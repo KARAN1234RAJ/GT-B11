@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Frontend Development:</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <p>
+      Using the length property we have counted the number of tags our document
+      has.
+    </p>
+    <button onclick="myFunction()">Count</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementsByTagName("LI");
+        window.alert("Languages needed for frontend dev are " + x.length + ".");
+      }
+    </script>
+  </body>
+</html>

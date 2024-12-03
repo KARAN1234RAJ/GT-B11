@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Finding HTML Elements Using document.links</h2>
+
+    <p>This page contains the following links:</p>
+    <p>
+      <a href="">Link-1</a>
+      <br />
+      <a href="">Link-2</a>
+    </p>
+
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        "Number of links: " + document.links.length;
+    </script>
+  </body>
+</html>

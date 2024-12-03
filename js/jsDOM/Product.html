@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        margin: 10px;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MyCart</h1>
+    <div id="main"></div>
+    <script>
+      let main = document.getElementById("main");
+      let api = "https://fakestoreapi.com/products";
+      fetch(api).then((response) =>
+        response.json().then((data) => {
+          console.log(data);
+          data.forEach((product) => {
+            let productDiv = document.createElement("div");
+            productDiv.innerHTML = `product ${product.title}
+            <img src="${product.image}" alt="${product.title}" />
+            <p>${product.description}</p>
+            `;
+            main.appendChild(productDiv);
+          });
+        })
+      );
+    </script>
+  </body>
+</html>

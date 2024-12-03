@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 60vw;
+        height: 80vh;
+        background-color: rgb(148, 207, 207);
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        h1 {
+          color: rgb(205, 65, 186);
+          margin-left: 30px;
+        }
+        #input_field {
+          width: 70%;
+          padding: 10px;
+          margin-left: 5%;
+        }
+        #add_btn {
+          padding: 10px;
+          background-color: rgb(148, 207, 207);
+          border-radius: 5px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>ToDo List For Our Study Routine</h1>
+      <input id="input_field" type="text" placeholder="Enter your task" />
+      <button id="add_btn">Add Task</button>
+      <ol id="task_list"></ol>
+    </div>
+    <script>
+      const inputData = document.getElementById("input_field");
+      const addButton = document.getElementById("add_btn");
+      const taskList = document.getElementById("task_list");
+      const listItem = document.createElement("li");
+      console.log(inputData.value);
+      //function
+      function addTask() {
+        console.log("addTask called");
+
+        const task = inputData.value;
+        if (task) {
+          const newListItem = document.createElement("li");
+          // remove the task from the list
+          const removeBtn = document.createElement("button");
+          newListItem.textContent = task;
+          removeBtn.textContent = "Remove";
+          taskList.appendChild(newListItem);
+          inputData.value = "";
+          newListItem.appendChild(removeBtn);
+          removeBtn.onclick = () => {
+            taskList.removeChild(newListItem);
+          };
+        } else {
+          alert("Please enter a task");
+        }
+      }
+
+      //event listener
+      addButton.addEventListener("click", addTask);
+    </script>
+  </body>
+</html>
