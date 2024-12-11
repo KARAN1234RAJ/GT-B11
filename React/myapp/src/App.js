@@ -10,7 +10,12 @@ import Comp1 from "./cssModule/Comp1";
 
 // import Parent from "./Parent";
 import Comp2 from "./cssModule/Comp2";
+import Form from "./Form/Form";
+import ScroleImage from "./Form/ScroleImage";
 import MoviesList from "./moviesList/MoviesList";
+import Counter from "./useEffect/Counter";
+import Example1 from "./useEffect/Example1";
+import Example2 from "./useEffect/Example2";
 
 function App() {
   // const [isLogin, setIsLogin] = useState(true);
@@ -33,7 +38,12 @@ function App() {
       {/* <Parent/> */}
       {/* <Comp1/>
       <Comp2/> */}
-      <MoviesList />
+      {/* <MoviesList /> */}
+      {/* <Form/> */}
+      {/* <ScroleImage/> */}
+      {/* <Counter/> */}
+      {/* <Example1/> */}
+      <Example2 />
     </div>
   );
 }
